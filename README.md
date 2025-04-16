@@ -4,6 +4,8 @@ Prisma, Express를 이용한 CRUD 구현
 
 ## 📦 실행 방법
 
+.env 파일은 따로 추가 부탁 ㅎ
+
 ```bash
 git clone https://github.com/your-id/project-name.git
 cd project-name
