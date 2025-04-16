@@ -6,7 +6,11 @@ const { validator } = require("../middleware/validator.js");
 
 productRouter.get("/", async (req, res) => {
   const products = await productService.getAll();
-  res.status(200).json(products);
+  res.status(200).json({
+    success: true,
+    message: "전체 상품 조회 성공",
+    data: { ...products },
+  });
   res.status(400).json({
     success: false,
     message: "전체 상품 조회 실패",
